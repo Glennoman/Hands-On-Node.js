@@ -11,7 +11,7 @@ const server = http.createServer((req, res) => {
   res.statusCode = 200;
 
   // Handling diff routes
-  switch ((red, url)) {
+  switch (req.url) {
     case "/":
       res.end("hello, World!");
       break;
